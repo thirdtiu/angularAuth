@@ -3,7 +3,7 @@ const router = express.Router()
 const jwt = require('jsonwebtoken')
 const User = require('../models/users')
 const mongoose = require('mongoose')
-const db = "mongodb+srv://root:root@cluster0-3gokm.mongodb.net/eventsdb?retryWrites=true"
+const db = "mongodb+srv://root:root@cluster0-3gokm.mongodb.net/eventsdb?retryWrites=true" //replace with your own db
 
 mongoose.connect(db, err => {
   if (err) {
